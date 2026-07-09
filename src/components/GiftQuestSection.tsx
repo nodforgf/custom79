@@ -5,7 +5,7 @@ import confetti from 'canvas-confetti';
 
 const CARD_IMAGES: { src: string; position: string }[] = [
     { src: "/images/7.jpeg",  position: "center center" },
-    { src: "/images/8.jpeg",  position: "center 75%" },
+    { src: "/images/8.jpeg",  position: "center 90%" },
     { src: "/images/9.jpeg",  position: "center center" },
     { src: "/images/10.jpeg", position: "center center" },
     { src: "/images/11.jpeg", position: "center center" },
