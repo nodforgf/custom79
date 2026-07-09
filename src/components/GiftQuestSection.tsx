@@ -132,7 +132,7 @@ export default function GiftQuestSection({ onBack, onFinish }: { onBack: () => v
                                 <motion.div animate={{ rotateY: card.flipped || card.matched ? 180 : 0 }} transition={{ duration: 0.4 }} className="w-full h-full relative" style={{ transformStyle: 'preserve-3d' }}>
                                     <div className="absolute inset-0 bg-[#fff8fb] border border-[#f4a7be]/50 rounded-xl flex items-center justify-center text-3xl font-black text-[#e8789a] shadow-inner" style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden' }}>?</div>
                                     <div className="absolute inset-0 bg-[#fff8fb] rounded-xl overflow-hidden shadow-2xl" style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}>
-                                        <img src={card.img} alt="couple" className="w-full h-full object-cover" style={{ objectPosition: card.position }} />
+                                        <img src={card.img} alt="couple" className="w-full h-full" style={{ objectFit: card.img === '/images/8.jpeg' ? 'contain' : 'cover', objectPosition: card.position, backgroundColor: '#fff8fb' }} />
                                     </div>
                                 </motion.div>
                             </div>
